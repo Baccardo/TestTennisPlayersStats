@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "910cc4b5-244a-4e2e-9f21-b01b9566a478",
+		"name": "TennisPlayersStatsTests",
+		"description": "A postman project to test the Web Api for Tennis Players Stats.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GelAllPlayers(Sorted by Id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60086/api/players",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60086",
+					"path": [
+						"api",
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayerById(Existing Player)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60086/api/players/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60086",
+					"path": [
+						"api",
+						"players",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPlayerById(Not Existing Player)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60086/api/players/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60086",
+					"path": [
+						"api",
+						"players",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePlayerById(Existing Player)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60086/api/players/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60086",
+					"path": [
+						"api",
+						"players",
+						"17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePlayerById(Not Existing Player)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60086/api/players/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60086",
+					"path": [
+						"api",
+						"players",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
